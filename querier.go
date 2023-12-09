@@ -11,24 +11,6 @@ import (
 	"go.uber.org/zap"
 )
 
-// -- ✓  : Implemented T based function
-// -- ✓✓ : Implemented both T & M based functions
-// -- ✗  : Not implemented
-// List of functions:
-// - InsertOne ✓
-// - InsertMany ✓
-// - Find ✓✓
-// - FindOne ✓✓
-// - Aggregate ?
-// - UpdateOne ✓✓
-// - UpdateMany ✓✓
-// - ReplaceOne ✓✓
-// - DeleteOne  ✓✓
-// - DeleteMany ✓✓
-// - CountDocuments ✓✓
-// - Distinct ✓✓
-// - BulkWrite ?
-
 var (
 	ErrUnsupportedCollection  = errors.New("unsupported collection")
 	ErrCollectionNameMismatch = errors.New("collection name mismatch")

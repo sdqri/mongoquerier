@@ -71,21 +71,19 @@ deletedDocument, err := querier.DeleteOne(context.Background(), deleteFilter)
 
 ### Functionalities
 Below is a summary of the project's functionalities and their implementation status:
-| `_id`        | Functionality   | Implemented | M_based |
-|--------------|-----------------|-------------|---------|
-| `ObjectId()` | InsertOne       | ✅          | -       |
-| `ObjectId()` | InsertMany      | ✅          | -       |
-| `ObjectId()` | Find            | ✅          | ✅      |
-| `ObjectId()` | FindOne         | ✅          | ✅      |
-| `ObjectId()` | Aggregate       | ❌          | -       |
-| `ObjectId()` | UpdateOne       | ✅          | ✅      |
-| `ObjectId()` | UpdateMany      | ✅          | ✅      |
-| `ObjectId()` | ReplaceOne      | ✅          | ✅      |
-| `ObjectId()` | DeleteOne       | ✅          | ✅      |
-| `ObjectId()` | DeleteMany      | ✅          | ✅      |
-| `ObjectId()` | CountDocuments  | ✅          | ✅      |
-| `ObjectId()` | Distinct        | ✅          | ✅      |
-| `ObjectId()` | BulkWrite       | ❌          | -       |
+| Functionality   | Implemented | M_based |
+|-----------------|-------------|---------|
+| InsertOne       | ✅          | -       |
+| InsertMany      | ✅          | -       |
+| Find            | ✅          | ✅      |
+| FindOne         | ✅          | ✅      |
+| UpdateOne       | ✅          | ✅      |
+| UpdateMany      | ✅          | ✅      |
+| ReplaceOne      | ✅          | ✅      |
+| DeleteOne       | ✅          | ✅      |
+| DeleteMany      | ✅          | ✅      |
+| CountDocuments  | ✅          | ✅      |
+| Distinct        | ✅          | ✅      |
 
 ## Contribution
 Contributions to MongoQuerier are welcome! Feel free to open issues or pull requests for new features, enhancements, or bug fixes.
