@@ -54,7 +54,10 @@ insertedID, err := querier.InsertOne(context.Background(), newProduct)
 
 // Find documents
 filter := Product{Name: "Example Product"}
-documents, err := querier.Find(context.Background(), filter, options.Find().SetSkip(0).SetLimit(10)) // Pagination for page 0 with size 10)
+documents, err := querier.Find(
+    context.Background(), 
+    filter, 
+    options.Find().SetSkip(0).SetLimit(10)) // Pagination for page 0 with size 10)
 
 // Update a document
 filter := Product{Name: "Example Product"}
